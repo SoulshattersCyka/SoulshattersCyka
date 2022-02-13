@@ -1,5 +1,5 @@
 game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
-game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "Sans"
+game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "SansBadTime"
 wait(3)
 
 
