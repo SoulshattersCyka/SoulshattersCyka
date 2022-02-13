@@ -143,11 +143,11 @@ wait(0.5)
                 
         local A_1 = {
     [1] = getrenv()._G.Pass,
-    [2] = "GasterBlasters",
+    [2] = "Blasters2",
     [3] = "SummonOneBig",
     [4] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 }
-local Target = game:GetService("ReplicatedStorage").Remotes.SansMoves
+local Target = game:GetService("ReplicatedStorage").Remotes.SansBadTimeMoves
 Target:InvokeServer(A_1)
     local A_1 = getrenv()._G.Pass
         local A_2 = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
@@ -167,11 +167,11 @@ Target:InvokeServer(A_1)
 
  local A_1 = {
     [1] = getrenv()._G.Pass,
-    [2] = "GasterBlasters",
+    [2] = "Blasters3",
     [3] = "SummonOne",
     [4] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 }
-local Target = game:GetService("ReplicatedStorage").Remotes.SansMoves
+local Target = game:GetService("ReplicatedStorage").Remotes.SansBadTimeMoves
 Target:InvokeServer(A_1)
 
     local A_1 = getrenv()._G.Pass
