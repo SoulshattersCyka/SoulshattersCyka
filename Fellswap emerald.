@@ -311,6 +311,8 @@ wait(0.1)
                     }
                 local Event = game:GetService("ReplicatedStorage").Remotes.Damage
                 Event:InvokeServer(A_1, A_2, A_3)
+    end
+            end)
 
 wait(3)
 for i, part in pairs(game.Players.LocalPlayer.Character.Attacks:GetChildren()) do
