@@ -14,6 +14,9 @@ game.Players.LocalPlayer.Character.Bone.BrickColor = BrickColor.new(0,102, 0)
 game.Players.LocalPlayer.Character.Head.HealthBar.Frame.PName.TextColor3 = Color3.fromRGB(0,102, 0)
 game.Players.LocalPlayer.PlayerGui.UI.Ui.ManaBar.Bar.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 game.Players.LocalPlayer.PlayerGui.UI.Ui.StaminaBar.Bar.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.Ui.MoveDebounceShower.Position = UDim2.new(0, 9999, 0, 9999)
+game.Players.LocalPlayer.PlayerGui.SansIndicator.Indicator:Destroy()
+game.Players.LocalPlayer.PlayerGui.SansIndicator.Help:Destroy()
 
 --Music
 
@@ -258,7 +261,7 @@ wait(0.1)
                     {
                         ["HitTime"] = 1, 
                         ["Type"] = "Normal", 
-                        ["HitEffect"] = "YellowEffect",
+                        ["HitEffect"] = "YellowHitEffect",
                         ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned,
                         ["Sound"] = game:GetService("ReplicatedStorage").Sounds.ChaosSaberSlice,
                         ["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0 + Vector3.new(0, -0.00001, 0),
@@ -280,7 +283,7 @@ wait(0.1)
                     {
                         ["HitTime"] = 1, 
                         ["Type"] = "Normal", 
-                        ["HitEffect"] = "YellowEffect",
+                        ["HitEffect"] = "YellowHitEffect",
                         ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned,
                         ["Sound"] = game:GetService("ReplicatedStorage").Sounds.ChaosSaberSlice,
                         ["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0 + Vector3.new(0, -0.00001, 0),
