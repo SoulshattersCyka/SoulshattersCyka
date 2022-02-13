@@ -305,13 +305,13 @@ wait(0.1)
         local A_3 = 
                     {
                         ["HitTime"] = 1, 
-                        ["Type"] = "Normal", 
+                        ["Type"] = "Knockback", 
                         ["HitEffect"] = "HeavyHitEffect",
                         ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned,
                         ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
                         ["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 10 + Vector3.new(0, -100, 0),
                         ["CombatInv"] = true,
-                        ["Damage"] = 10
+                        ["Damage"] = 40
                     }
                 local Event = game:GetService("ReplicatedStorage").Remotes.Damage
                 Event:InvokeServer(A_1, A_2, A_3)
