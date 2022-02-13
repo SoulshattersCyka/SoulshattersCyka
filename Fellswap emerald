@@ -315,6 +315,8 @@ wait(0.1)
                     }
                 local Event = game:GetService("ReplicatedStorage").Remotes.Damage
                 Event:InvokeServer(A_1, A_2, A_3)
+
+game.Players.LocalPlayer.Character.Bone.Transparency = 0
     end
             end)
 
