@@ -489,3 +489,6 @@ wait(0.5)
                     }
                 local Event = game:GetService("ReplicatedStorage").Remotes.Damage
                 Event:InvokeServer(A_1, A_2, A_3)
+game.Workspace.Trident.Transparency = 1
+end
+end)
