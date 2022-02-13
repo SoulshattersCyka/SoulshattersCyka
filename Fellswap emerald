@@ -249,6 +249,7 @@ end)
 
 game:GetService("UserInputService").InputBegan:Connect(function(inp)
     if inp.KeyCode == Enum.KeyCode.Two then
+game.Players.LocalPlayer.Character.Bone.Transparency = 0
 local Anim = Instance.new("Animation")
 Anim.AnimationId = "rbxassetid://8075786794"
 local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
