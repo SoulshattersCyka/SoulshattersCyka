@@ -195,7 +195,7 @@ end)
 
  
 
-game.Players.Character.Data.Stamina.Value <= 1500 then
+if game.Players.LocalPlayer.Character.Data.Stamina.Value <= 1500 then
       local A_1 = {
         [1] = getrenv()._G.Pass,
         [2] = "Chatted",
