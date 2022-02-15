@@ -1,0 +1,95 @@
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
+game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "Asriel"
+wait(1)
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").AsrielMoves.Animations.Idle.AnimationId = "rbxassetid://4900761581"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").AsrielMoves.Animations.Walk.AnimationId = "rbxassetid://7005162082"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").AsrielMoves.Animations.Run.AnimationId = "rbxassetid://7005205711"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").AsrielMoves.Animations.WalkBack.AnimationId = "rbxassetid://7005162082"
+
+ --KeyJammed
+      local CAS = game:GetService("ContextActionService")
+            local FREEZE_COMMAND = "CantAttack"
+            CAS:BindActionAtPriority(
+                FREEZE_COMMAND,
+                function()
+                    return Enum.ContextActionResult.Sink
+                end,
+                false,
+                Enum.ContextActionPriority.High.Value,
+                Enum.KeyCode.One,
+                Enum.KeyCode.Two,
+                Enum.KeyCode.Three,
+                Enum.KeyCode.Four,
+                Enum.KeyCode.Five,
+                Enum.KeyCode.Six
+                )
+                
+--Music
+game.Players.LocalPlayer:WaitForChild("StarterPlaylist")
+game.Players.LocalPlayer.StarterPlaylist["1Hopes and dreams"]:Destroy()
+local Sound = Instance.new("Sound")
+Sound.Parent = game.Players.LocalPlayer.StarterPlaylist
+Sound.Volume = 1
+Sound.Playing = true
+Sound.Looped = true
+Sound.SoundId = "rbxassetid://7954666458" 
+Sound.Name = "Dee dee ohs"
+
+local shit = game.Players.LocalPlayer.Character:GetDescendants()
+for i, v in pairs(shit) do
+
+    if v.Name == "BodyAura" or v.Name == "Trail" then
+
+        v:Destroy()
+
+    end
+
+end
+
+game:GetService("UserInputService").InputBegan:Connect(function(inp)
+    if inp.KeyCode == Enum.KeyCode.One then
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://3752886447"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+wait(0.1)
+        local A_1 = getrenv()._G.Pass
+        local A_2 = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+        local A_3 = 
+                    {
+                        ["HitTime"] = 1, 
+                        ["Type"] = "Knockback", 
+                        ["HitEffect"] = "HeavyHitEffect",
+                        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.SpGrab,
+                        ["Sound"] = game:GetService("ReplicatedStorage").Resources.Sounds.Moves.SpecialHell2.Charge,
+                        ["CombatInv"] = true,
+                        ["Damage"] = 5
+                    }
+                local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+                Event:InvokeServer(A_1, A_2, A_3)
+                
+                local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://4900761581"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+    end
+end)
+        
+
+Loop_Speed = 0 -- You can make this 0
+while wait(Loop_Speed) do
+ local Anim = Instance.new("Animation")
+        Anim.AnimationId = "rbxassetid://4283811527"
+        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+        k:Play()
+        k:AdjustSpeed(999)
+        wait(0.1)
+         local Anim = Instance.new("Animation")
+        Anim.AnimationId = "rbxassetid://4900761581"
+        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+        k:Play()
+        k:AdjustSpeed(1)
+        wait(1)
+        end
