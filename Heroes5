@@ -258,6 +258,7 @@ wait(0.5)
                         ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
                         ["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0 + Vector3.new(0, -0.00001, 0),
                         ["CombatInv"] = true,
+                        ["Karma"] = 1,
                         ["Damage"] = 10
                     }
                 local Event = game:GetService("ReplicatedStorage").Remotes.Damage
@@ -274,6 +275,7 @@ wait(0.5)
                         ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
                         ["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0 + Vector3.new(0, -0.00001, 0),
                         ["CombatInv"] = true,
+                        ["Karma"] = 1,
                         ["Damage"] = 10
                     }
                 local Event = game:GetService("ReplicatedStorage").Remotes.Damage
@@ -290,6 +292,7 @@ wait(0.5)
                         ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
                         ["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0 + Vector3.new(0, -0.00001, 0),
                         ["CombatInv"] = true,
+                        ["Karma"] = 1,
                         ["Damage"] = 10
                     }
                 local Event = game:GetService("ReplicatedStorage").Remotes.Damage
@@ -306,6 +309,7 @@ wait(0.5)
                         ["Sound"] = game:GetService("ReplicatedStorage").Sounds.HateExplosion,
                         ["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0 + Vector3.new(0, 50, 0),
                         ["CombatInv"] = true,
+                        ["Karma"] = 1,
                         ["Damage"] = 40
                     }
                 local Event = game:GetService("ReplicatedStorage").Remotes.Damage
