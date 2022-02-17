@@ -1,6 +1,100 @@
 game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
 game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "Sans"
 wait(1)
+game.Players.LocalPlayer.Character:WaitForChild("Head"):WaitForChild("HealthBar"):Destroy()
+
+
+  --headgui
+local HealthBar = Instance.new("BillboardGui")
+local Frame = Instance.new("Frame")
+local HealthLabel = Instance.new("TextLabel")
+local PName = Instance.new("TextLabel")
+local rep = game:GetService("ReplicatedStorage")
+local uis = game:GetService("UserInputService")
+local plrs = game:GetService("Players")
+local runS = game:GetService("RunService")
+local tweenS = game:GetService("TweenService")
+local v21 = require(game:GetService("ReplicatedStorage").ClientModules.MainModule);
+local remotes = rep:WaitForChild("Remotes")
+local damage = remotes:WaitForChild("Damage")
+local functions = remotes:WaitForChild("Functions")
+local events = remotes:WaitForChild("Events")
+local LoseMoves = remotes:WaitForChild("CharaMoves")
+local main
+local plr = plrs.LocalPlayer
+local plrGui = plr:WaitForChild("PlayerGui")
+local mouse = plr:GetMouse()
+local player = game.Players.LocalPlayer
+local Players = game:GetService("Players")
+local rs = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+local userInputService = game:GetService("UserInputService")
+--Properties:
+
+HealthBar.Name = "HealthBar"
+HealthBar.Parent = player.Character.Head
+HealthBar.ExtentsOffset = Vector3.new(0, 3, 0)
+HealthBar.Size = UDim2.new(4, 0, 2, 0)
+
+Frame.Parent = HealthBar
+Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame.BackgroundTransparency = 1.000
+Frame.Size = UDim2.new(1, 0, 1, 0)
+
+HealthLabel.Name = "HealthLabel"
+HealthLabel.Parent = Frame
+HealthLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HealthLabel.BackgroundTransparency = 1.000
+HealthLabel.Position = UDim2.new(0.200000003, 0, 0.200000003, 0)
+HealthLabel.Size = UDim2.new(0.800000012, 0, 0.300000012, 0)
+HealthLabel.Font = Enum.Font.Arcade
+HealthLabel.Text = ""
+HealthLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+HealthLabel.TextScaled = true
+HealthLabel.TextSize = 14.000
+HealthLabel.TextWrapped = true
+HealthLabel.TextXAlignment = Enum.TextXAlignment.Left
+HealthLabel.TextYAlignment = Enum.TextYAlignment.Center
+
+PName.Name = "PName"
+PName.Parent = Frame
+PName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PName.BackgroundTransparency = 1.000
+PName.Position = UDim2.new(-0.899999976, 0, -0.800000012, 0)
+PName.Size = UDim2.new(3, 0, 1, 0)
+PName.Font = Enum.Font.Arcade
+PName.Text = "T H E M"
+PName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PName.TextScaled = true
+PName.TextSize = 5.000
+PName.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+PName.TextStrokeTransparency = 0.000
+PName.TextWrapped = true
+PName.TextXAlignment = Enum.TextXAlignment.Center
+PName.TextYAlignment = Enum.TextYAlignment.Top
+PName.Rotation = 5
+
+
+
+
+--tween Rotation
+local part = PName
+        
+        local Info = TweenInfo.new(
+            2,                              --Length (seconds)
+            Enum.EasingStyle.Sine,          --Easing Style
+            Enum.EasingDirection.InOut,       --Easing Direction
+            -1,                             --Times Repeated
+            true,                           --reversed
+            0                               --deşau
+            )
+            
+        local Goals = {
+            Rotation = -5
+        }
+        
+        local nametween = TweenService:Create(part, Info, Goals)
+        nametween:Play()
 
 game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.Animations.Idle.AnimationId = "rbxassetid://5028878836"
 game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.Animations.Walk.AnimationId = "rbxassetid://5096023358"
