@@ -1,0 +1,629 @@
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
+game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "Sans"
+wait(1)
+game.Players.LocalPlayer.Character:WaitForChild("Head"):WaitForChild("HealthBar"):Destroy()
+
+
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.Animations.Idle.AnimationId = "rbxassetid://4900761581"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.Animations.Walk.AnimationId = "rbxassetid://7005162082"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.Animations.Run.AnimationId = "rbxassetid://7005205711"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.ModuleScript.Animations.BladesCombat.Light1.AnimationId = "rbxassetid://4800254068"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.ModuleScript.Animations.BladesCombat.Light2.AnimationId = "rbxassetid://4348265296"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.ModuleScript.Animations.BladesCombat.Light3.AnimationId = "rbxassetid://4348287123"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.ModuleScript.Animations.BladesCombat.Light4.AnimationId = "rbxassetid://5973921873"
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").SansMoves.ModuleScript.Animations.BladesCombat.Light5.AnimationId = "rbxassetid://3752218582"
+
+game.Players.LocalPlayer.Character.Data.Attack.Value = "264"
+game.Players.LocalPlayer.Character.Data.Defense.Value = "637"
+
+wait(2)
+ 
+
+--Bar Colors
+game.Players.LocalPlayer.PlayerGui.UI.Ui.ManaBar.Bar.BackgroundColor3 = Color3.fromRGB(255, 95, 31)
+game.Players.LocalPlayer.PlayerGui.UI.Ui.StaminaBar.Bar.BackgroundColor3 = Color3.fromRGB(255, 95, 31)
+
+--Music
+
+--Music
+game.Players.LocalPlayer:WaitForChild("StarterPlaylist")
+game.Players.LocalPlayer.StarterPlaylist["1Megalovania"]:Destroy()
+local Sound = Instance.new("Sound")
+Sound.Parent = game.Players.LocalPlayer.StarterPlaylist
+Sound.Volume = 1.5
+Sound.Playing = true
+Sound.Looped = true
+Sound.SoundId = "rbxassetid://1425629198" 
+Sound.Name = "Dee dee ohs"
+
+
+game.Players.LocalPlayer.Character.Head.Voice.SoundId = "rbxassetid://5342465893"
+game.Players.LocalPlayer.Character.Bone:Destroy()
+
+
+        
+               local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "Okay, let's stop right there!",
+        [4] = Color3.new(1, 1, 1)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+    wait(5)
+    
+          local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "I'm not ready!",
+        [4] = Color3.new(1, 1, 1)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+    wait(2)
+            local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "I'm not!",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+        wait(2)
+            local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "I don't have enough",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+    wait(5)
+      local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "...",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+            wait(2)
+            local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "Heh heh...",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+    wait(4)
+              local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "I'm lying",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+        wait(4)
+              local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "I am more ready than you are!",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+        wait(4)
+              local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "I have more LV, HP, ATK...",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+            wait(4)
+              local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "I'm stronger than you!",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+    
+    --Music
+game.Players.LocalPlayer:WaitForChild("StarterPlaylist")
+game.Players.LocalPlayer.StarterPlaylist["Dee dee ohs"]:Destroy()
+local Sound = Instance.new("Sound")
+Sound.Parent = game.Players.LocalPlayer.StarterPlaylist
+Sound.Volume = 0
+Sound.Playing = true
+Sound.Looped = true
+Sound.SoundId = "rbxassetid://5237637" 
+Sound.Name = "negros"
+    
+    
+        
+
+
+
+wait(1)
+
+ local Anim = Instance.new("Animation")
+        Anim.AnimationId = "rbxassetid://3877055653"
+        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+        k:Play()
+        k:AdjustSpeed(1)
+        
+          --headgui
+local HealthBar = Instance.new("BillboardGui")
+local Frame = Instance.new("Frame")
+local HealthLabel = Instance.new("TextLabel")
+local PName = Instance.new("TextLabel")
+local rep = game:GetService("ReplicatedStorage")
+local uis = game:GetService("UserInputService")
+local plrs = game:GetService("Players")
+local runS = game:GetService("RunService")
+local tweenS = game:GetService("TweenService")
+local v21 = require(game:GetService("ReplicatedStorage").ClientModules.MainModule);
+local remotes = rep:WaitForChild("Remotes")
+local damage = remotes:WaitForChild("Damage")
+local functions = remotes:WaitForChild("Functions")
+local events = remotes:WaitForChild("Events")
+local LoseMoves = remotes:WaitForChild("CharaMoves")
+local main
+local plr = plrs.LocalPlayer
+local plrGui = plr:WaitForChild("PlayerGui")
+local mouse = plr:GetMouse()
+local player = game.Players.LocalPlayer
+local Players = game:GetService("Players")
+local rs = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+local userInputService = game:GetService("UserInputService")
+--Properties:
+
+HealthBar.Name = "HealthBar"
+HealthBar.Parent = player.Character.Head
+HealthBar.ExtentsOffset = Vector3.new(0, 3, 0)
+HealthBar.Size = UDim2.new(4, 0, 2, 0)
+
+Frame.Parent = HealthBar
+Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame.BackgroundTransparency = 1.000
+Frame.Size = UDim2.new(1, 0, 1, 0)
+
+HealthLabel.Name = "HealthLabel"
+HealthLabel.Parent = Frame
+HealthLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HealthLabel.BackgroundTransparency = 1.000
+HealthLabel.Position = UDim2.new(0.200000003, 0, 0.200000003, 0)
+HealthLabel.Size = UDim2.new(0.800000012, 0, 0.300000012, 0)
+HealthLabel.Font = Enum.Font.Arcade
+HealthLabel.Text = ""
+HealthLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+HealthLabel.TextScaled = true
+HealthLabel.TextSize = 14.000
+HealthLabel.TextWrapped = true
+HealthLabel.TextXAlignment = Enum.TextXAlignment.Left
+HealthLabel.TextYAlignment = Enum.TextYAlignment.Center
+
+PName.Name = "PName"
+PName.Parent = Frame
+PName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PName.BackgroundTransparency = 1.000
+PName.Position = UDim2.new(-0.899999976, 0, -0.800000012, 0)
+PName.Size = UDim2.new(3, 0, 1, 0)
+PName.Font = Enum.Font.Arcade
+PName.Text = "DustBelief Papyrus"
+PName.TextColor3 = Color3.fromRGB(0,0,0)
+PName.TextScaled = true
+PName.TextSize = 5.000
+PName.TextStrokeColor3 = Color3.fromRGB(255, 95, 31)
+PName.TextStrokeTransparency = 0.000
+PName.TextWrapped = true
+PName.TextXAlignment = Enum.TextXAlignment.Center
+PName.TextYAlignment = Enum.TextYAlignment.Top
+PName.Rotation = 5
+
+
+
+
+--tween Rotation
+local part = PName
+        
+        local Info = TweenInfo.new(
+            2,                              --Length (seconds)
+            Enum.EasingStyle.Sine,          --Easing Style
+            Enum.EasingDirection.InOut,       --Easing Direction
+            -1,                             --Times Repeated
+            true,                           --reversed
+            0                               --deşau
+            )
+            
+        local Goals = {
+            Rotation = -5
+        }
+        
+        local nametween = TweenService:Create(part, Info, Goals)
+        nametween:Play()
+        
+
+
+    --Music
+game.Players.LocalPlayer:WaitForChild("StarterPlaylist")
+game.Players.LocalPlayer.StarterPlaylist["negros"]:Destroy()
+local Sound = Instance.new("Sound")
+Sound.Parent = game.Players.LocalPlayer.StarterPlaylist
+Sound.Volume = 1.5
+Sound.Playing = true
+Sound.Looped = true
+Sound.SoundId = "rbxassetid://3443155670" 
+Sound.Name = "Dustbelief"
+    
+
+
+
+
+
+
+wait(32)
+
+
+
+player = game.Players.LocalPlayer
+char = player.Character
+local TweenService = game:GetService("TweenService")
+_G.nowings = true
+wait(1)
+
+--right
+local part1 = Instance.new("Part")
+part1.Name = "part1"
+part1.Parent = char
+part1.Anchored = false
+part1.CanCollide = false
+part1.Transparency = 0.6
+
+
+
+
+
+
+
+
+
+
+--weldright
+
+local weld1 = Instance.new("Weld")
+weld1.Parent = char.HumanoidRootPart
+weld1.Part0 = char.Torso
+weld1.Part1 = part1
+weld1.C0 = CFrame.new(2.5,2,0)*CFrame.Angles(0, 0, math.rad(0))
+weld1.Name = "weld1"
+
+
+
+
+
+
+
+
+
+local c0s = {
+CFrame.new(3.2,2,0)*CFrame.Angles(0, 0, math.rad(0)),
+
+
+}
+local welds = {weld1}
+
+
+
+        
+        
+        
+        
+for i = 1,1,1 do
+    spawn(function()
+local args = {
+    [1] = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Bones",
+        [3] = "AirSpawn",
+        [4] = Vector3.new(0,10,0)
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.SansMoves:InvokeServer(unpack(args))
+
+end)
+end
+ 
+local detect 
+local detect2
+local val = Instance.new('NumberValue',char)
+val.Name = 'BonesRIGHT'
+local num = 0
+local tab = {}
+local tab2 = {}
+detect = char.Attacks.ChildAdded:Connect(function(child)
+    if child.Name == "Bone" then
+        table.insert(tab,child)
+        child:WaitForChild("NotTouched"):Destroy()
+        child:WaitForChild("BodyVelocity"):Destroy()
+local bp = Instance.new('BodyPosition',child)
+bp.Name = 'Client'
+bp.P = 30000
+bp.D = 150
+bp.Position = char.HumanoidRootPart.Position
+table.insert(tab2,bp)
+        num = num + 1
+        val.Value = num
+    end
+end)
+_G.nowings = false
+detect2 = val:GetPropertyChangedSignal("Value"):Connect(function(amo)
+if val.Value == 6 then
+    
+for i = 1,#tab do
+spawn(function()
+    local part = welds[i].Part1
+    local sl = tab[i]
+    local bs = tab2[i]
+    part.Transparency = 1
+while true do game['Run Service'].Heartbeat:wait()
+    if _G.nowings then break end
+    local cfr = part.CFrame*CFrame.Angles(0,math.rad(90),math.rad(180))
+bs.Position = cfr.p 
+sl.CFrame = cfr
+end
+part:Destroy()
+sl:Destroy()
+end)
+end
+detect:Disconnect()
+detect2:Disconnect()
+val:Destroy()
+
+end
+end)
+
+player = game.Players.LocalPlayer
+char = player.Character
+local TweenService = game:GetService("TweenService")
+_G.nowings = true
+wait(1)
+
+
+
+
+--left
+local part1L = Instance.new("Part")
+part1L.Name = "part1L"
+part1L.Parent = char
+part1L.Anchored = false
+part1L.CanCollide = false
+part1L.Transparency = 0.6
+
+
+
+
+
+
+
+
+
+--weld left
+local weld1L = Instance.new("Weld")
+weld1L.Parent = char.HumanoidRootPart
+weld1L.Part0 = char.Torso
+weld1L.Part1 = part1L
+weld1L.C0 = CFrame.new(-2.5,2,0)*CFrame.Angles(0, 0, math.rad(0))
+weld1L.Name = "weld1L"
+
+
+
+
+
+
+
+local c0s = {
+CFrame.new(-3.2,2,0)*CFrame.Angles(0, 0, math.rad(0)),
+
+}
+local welds = {weld1L}
+
+
+
+        
+        
+        
+        
+for i = 1,1,1 do
+    spawn(function()
+local args = {
+    [1] = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Bones",
+        [3] = "AirSpawn",
+        [4] = Vector3.new(0,10,0)
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.SansMoves:InvokeServer(unpack(args))
+
+end)
+end
+ 
+local detect 
+local detect2
+local val = Instance.new('NumberValue',char)
+val.Name = 'BonesLEFT'
+local num = 0
+local tab = {}
+local tab2 = {}
+detect = char.Attacks.ChildAdded:Connect(function(child)
+    if child.Name == "Bone" then
+        table.insert(tab,child)
+        child:WaitForChild("NotTouched"):Destroy()
+        child:WaitForChild("BodyVelocity"):Destroy()
+         
+local bp = Instance.new('BodyPosition',child)
+bp.Name = 'Client'
+bp.P = 30000
+bp.D = 150
+bp.Position = char.HumanoidRootPart.Position
+table.insert(tab2,bp)
+        num = num + 1
+        val.Value = num
+    end
+end)
+_G.nowings = false
+detect2 = val:GetPropertyChangedSignal("Value"):Connect(function(amo)
+if val.Value == 4 then
+    
+for i = 1,#tab do
+spawn(function()
+    local part = welds[i].Part1
+    local sl = tab[i]
+    local bs = tab2[i]
+    part.Transparency = 1
+while true do game['Run Service'].Heartbeat:wait()
+    if _G.nowings then break end
+    local cfr = part.CFrame*CFrame.Angles(0,math.rad(90),math.rad(180))
+bs.Position = cfr.p 
+sl.CFrame = cfr
+end
+part:Destroy()
+sl:Destroy()
+end)
+end
+detect:Disconnect()
+detect2:Disconnect()
+val:Destroy()
+
+end
+end)
+
+k:Stop()
+wait(0.4)
+   local Anim = Instance.new("Animation")
+        Anim.AnimationId = "rbxassetid://4057815259"
+        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+        k:Play()
+        k:AdjustSpeed(1)
+        wait(0.7)
+
+
+local char = game.Players.LocalPlayer.Character
+local tridentHolder = Instance.new("Model",game.Workspace)
+tridentHolder.Name = "Trident"
+tri = Instance.new("MeshPart",tridentHolder)
+tri.Name = "Trident"
+tri.Transparency = 0
+tri.Anchored = false
+tri.CanCollide = false
+tri.MeshId = "rbxassetid://6111587609"
+tri.Color = Color3.fromRGB(255, 95, 31)
+tri.Material = "Neon"
+tri.Size = Vector3.new(0.75,0.75,0.75)
+tri.CFrame = char['Left Arm'].CFrame
+triweld = Instance.new('Weld',tri)
+triweld.Part0 = tri
+triweld.Part1 = char['Left Arm']
+An = {95,0,0}
+Angle = CFrame.fromEulerAnglesXYZ(math.rad(An[1]), math.rad(An[2]),math.rad(An[3]))
+triweld.C0 = CFrame.new(0,-2,0.85)*Angle
+wait(0.7)
+local char = game.Players.LocalPlayer.Character
+local tridentHolder = Instance.new("Model",game.Workspace)
+tridentHolder.Name = "Trident2"
+tri = Instance.new("MeshPart",tridentHolder)
+tri.Name = "Trident2"
+tri.Transparency = 0
+tri.Anchored = false
+tri.CanCollide = false
+tri.MeshId = "rbxassetid://6111587609"
+tri.Color = Color3.fromRGB(255, 95, 31)
+tri.Material = "Neon"
+tri.Size = Vector3.new(0.75,0.75,0.75)
+tri.CFrame = char['Right Arm'].CFrame
+triweld = Instance.new('Weld',tri)
+triweld.Part0 = tri
+triweld.Part1 = char['Right Arm']
+An = {95,0,0}
+Angle = CFrame.fromEulerAnglesXYZ(math.rad(An[1]), math.rad(An[2]),math.rad(An[3]))
+triweld.C0 = CFrame.new(0,-2,0.85)*Angle
+wait(2)
+
+
+
+repeat wait() until game.Players.LocalPlayer.Character.Data.Stamina.Value <= 500
+
+game.Players.LocalPlayer.Character.Humanoid.HipHeight = 15
+ 
+ local Anim = Instance.new("Animation") 
+ Anim.AnimationId = "rbxassetid://4087847725"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(0.5)
+
+game.Workspace.Trident2:Destroy()
+
+ local Anim = Instance.new("Animation") 
+ Anim.AnimationId = "rbxassetid://4458837452"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(0.5)
+
+
+ 
+  
+
+--Music
+    --Music
+game.Players.LocalPlayer:WaitForChild("StarterPlaylist")
+game.Players.LocalPlayer.StarterPlaylist["Dustbelief"]:Destroy()
+local Sound = Instance.new("Sound")
+Sound.Parent = game.Players.LocalPlayer.StarterPlaylist
+Sound.Volume = 1.5
+Sound.Playing = true
+Sound.Looped = true
+Sound.SoundId = "rbxassetid://4896114314" 
+Sound.Name = "DustToDust..."
+
+
+    local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "Did you really think it would be that easy!?",
+        [4] = Color3.new(1, 1, 1)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+    wait(5)
+        local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = "I am dissappointed...",
+        [4] = Color3.new(1, 1, 1)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+    wait(5)
+      local A_1 = {
+        [1] = getrenv()._G.Pass,
+        [2] = "Chatted",
+        [3] = " Sans was right... THIS IS WHAT YOU DESERVE!",
+        [4] = Color3.new(1, 0, 0)
+    }
+    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+    Event:FireServer(A_1)
+    wait(5)
+    
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = 0
+
+spawn(function()
+end)
